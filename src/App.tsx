@@ -91,8 +91,11 @@ function App() {
     await worker.initialize('eng');
     setProgress(75); 
 
-    const response = await worker.recognize(file[0]);
-    setOcrResult(response.data.text);
+    if (file) {
+      const response = await worker.recognize(file[0]);
+      
+      setOcrResult(response.data.text);
+    }
 
     setProgress(100);
   }
