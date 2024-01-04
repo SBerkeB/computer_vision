@@ -16,7 +16,7 @@ function App() {
     setProgress(10);
     setProgressLabel('Starting');
     const response = await fetch(
-      "https://api-inference.huggingface.co/models/dataautogpt3/OpenDalleV1.1",
+      "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0",
       {
         headers: { Authorization: "Bearer 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" },
         method: "POST",
