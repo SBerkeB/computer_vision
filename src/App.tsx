@@ -18,7 +18,7 @@ function App() {
     const response = await fetch(
       "https://api-inference.huggingface.co/models/dataautogpt3/OpenDalleV1.1",
       {
-        headers: { Authorization: "Bearer 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" },
+        headers: { Authorization: "Bearer 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" },
         method: "POST",
         body: JSON.stringify({"inputs": ocrResult}),
       }
